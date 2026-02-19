@@ -10,9 +10,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 # ==========================================
 # 【核心配置区】
-API_KEY = "68E064B4B3CBD567CF05FBC12EA831A4"
-MY_STEAM_ID = "76561198365452826"
-SERVERCHAN_KEY = "SCT315226Tz4i0ctdr1FgcLeDgC2Pjw0sr" # 如果你想测微信推送，去 Server酱 领个 Key 填这里
+API_KEY = ""
+MY_STEAM_ID = ""
+SERVERCHAN_KEY = "" # 如果你想测微信推送，去 Server酱 领个 Key 填这里
 
 # 【实验开关】
 # 设置为 True：脚本会连你自己一起监控，方便测试。
@@ -255,4 +255,5 @@ class SteamMonitor:
 
 if __name__ == "__main__":
     monitor = SteamMonitor(API_KEY, MY_STEAM_ID, SERVERCHAN_KEY)
+
     monitor.start()
